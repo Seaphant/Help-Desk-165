@@ -1,0 +1,12 @@
+[server]
+headless = true
+port = 43117
+address = "0.0.0.0"
+fileWatcherType = "auto"
+
+[browser]
+gatherUsageStats = false
+
+[theme]
+base = "light"
+primaryColor = "#0055A2"

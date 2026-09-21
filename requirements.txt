@@ -1,0 +1,16 @@
+# HelpDesk165 prototype
+streamlit==1.64.0
+pandas==3.0.6
+altair==6.3.0
+
+# Project-management analysis scripts (analysis/)
+numpy==2.5.3
+matplotlib==3.11.2
+
+# Deliverable generation (tools/build_deliverables.py)
+python-docx==1.2.0
+python-pptx==1.0.2
+openpyxl==3.1.5
+
+# Tests
+pytest==9.1.1

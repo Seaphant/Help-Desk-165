@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.streamlit/secrets.toml
+
+# Local database is generated and seeded on first run
+data/*.db
+data/*.db-journal
+
+.DS_Store
