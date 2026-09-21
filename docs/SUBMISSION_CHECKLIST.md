@@ -19,7 +19,7 @@ python -m analysis.run_all       # regenerates every number the documents quote
 | # | Required deliverable | Requirement | Status | File / action |
 |---|---|---|---|---|
 | 1 | **Project report** | Under 5,000 words | Ready — 4,634 words of prose, headings, and captions (4,312 body prose). Table cells add 903 more; word limits conventionally exclude tables. | [`deliverables/CMPE165_Project1_Report.docx`](deliverables/CMPE165_Project1_Report.docx) — submit this one. Markdown mirror: [`PROJECT_REPORT.md`](PROJECT_REPORT.md) |
-| 2 | **GitHub repository URL** | Public, with README and AI reflection | Repo content ready; **push still required** | Paste `https://github.com/Seaphant/Help-Desk-165` into Canvas. See "What you still have to do" below. |
+| 2 | **GitHub repository URL** | Public, with README and AI reflection | Pushed and verified — full history is live and the repo is public | Paste `https://github.com/Seaphant/Help-Desk-165` into Canvas. |
 | 3 | **Loom demo URL** | Max 4 minutes, shows working software | Script ready; **recording still required** | [`LOOM_SCRIPT.md`](LOOM_SCRIPT.md) — timed, with the exact click path |
 | 4 | **Calculation appendix** | Shows the arithmetic, not just answers | Ready — 9 sheets, live Excel formulas | [`deliverables/CMPE165_Project1_Calculations.xlsx`](deliverables/CMPE165_Project1_Calculations.xlsx) |
 | 5 | **Class slides** | Maximum 4 slides | Ready — exactly 4, with speaker notes and per-slide time budgets | [`deliverables/CMPE165_Project1_Slides.pptx`](deliverables/CMPE165_Project1_Slides.pptx) |
@@ -80,15 +80,14 @@ retype numbers into the documents.
       placeholder lines reading `TEAMMATE 2 — ADD FULL NAME HERE`. Replace them
       with real names and delete any extras. The rubric expects every team
       member listed.
-- [ ] **Push the repository to GitHub.** No GitHub credentials exist in the
-      build environment, so this has to happen from your own machine. Use the
-      prepared bundle: open `HelpDesk165-github-upload`, double-click
-      **`PUSH_TO_GITHUB.bat`** (Windows) or run **`./push_to_github.sh`**
-      (WSL / macOS / Linux), and sign in to GitHub when the browser opens. See
-      `README_UPLOAD.md` in that folder.
-- [ ] **Confirm the repository is public** at
-      <https://github.com/Seaphant/Help-Desk-165> — open it in a private
-      browser window. A private repo scores zero on rubric row 11.
+- [x] ~~**Push the repository to GitHub.**~~ Done. All 9 commits are live at
+      <https://github.com/Seaphant/Help-Desk-165>, verified by a fresh clone
+      that installs, passes 125 tests, and regenerates every analysis artifact.
+      The `HelpDesk165-github-upload` bundle in `~/Downloads` is now only a
+      fallback; you do not need to run it.
+- [x] ~~**Confirm the repository is public.**~~ Verified public. Re-check in a
+      private browser window if you change repository settings — a private repo
+      scores zero on rubric row 11.
 - [ ] **Record the Loom**, max 4 minutes, following
       [`LOOM_SCRIPT.md`](LOOM_SCRIPT.md). Reseed the sample data from the
       sidebar first. Set the Loom link sharing to "anyone with the link".
