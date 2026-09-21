@@ -9,7 +9,7 @@ One queue for every campus technology request. Built for **SJSU Campus Technolog
 ## Team members
 
 - **W. Nguyen** — GitHub: [Seaphant](https://github.com/Seaphant)
-- `TEAMMATE 2 — ADD FULL NAME HERE` *(placeholder — replace before Canvas submission)*
+- **Amy Wong**
 - `TEAMMATE 3 — ADD FULL NAME HERE` *(placeholder — replace before Canvas submission)*
 - `TEAMMATE 4 — ADD FULL NAME HERE` *(placeholder — delete this line if the team is smaller)*
 
