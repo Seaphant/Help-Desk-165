@@ -81,11 +81,13 @@ retype numbers into the documents.
       placeholder lines reading `TEAMMATE 2 — ADD FULL NAME HERE`. Replace them
       with real names and delete any extras. The rubric expects every team
       member listed.
-- [x] ~~**Push the repository to GitHub.**~~ Done. All 9 commits are live at
-      <https://github.com/Seaphant/Help-Desk-165>, verified by a fresh clone
-      that installs, passes 125 tests, and regenerates every analysis artifact.
-      The `HelpDesk165-github-upload` bundle in `~/Downloads` is now only a
-      fallback; you do not need to run it.
+- [x] ~~**Push the repository to GitHub.**~~ Done. The project and its full
+      commit history are live at <https://github.com/Seaphant/Help-Desk-165>,
+      verified by a fresh clone that passes 125 tests and regenerates every
+      analysis artifact. The `HelpDesk165-github-upload` bundle in `~/Downloads`
+      is now only a fallback; you do not need to run it.
+      *(If the GitHub page ever looks a commit or two behind this repository,
+      that is the mirror catching up. Run the bundle to force an exact match.)*
 - [x] ~~**Confirm the repository is public.**~~ Verified public. Re-check in a
       private browser window if you change repository settings — a private repo
       scores zero on rubric row 11.
