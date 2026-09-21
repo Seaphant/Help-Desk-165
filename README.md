@@ -84,6 +84,10 @@ python -m tools.polish_slides
 # Regenerate the Markdown copy of the report from the Word file
 python -m tools.docx_to_markdown \
     docs/deliverables/CMPE165_Project1_Report.docx docs/PROJECT_REPORT.md
+
+# Check the word / slide limits, and that no document links to a missing file
+python -m tools.report_stats
+python -m tools.check_doc_links
 ```
 
 `python -m analysis.run_all` is the one that matters: every number in the report, the slides, and the workbook is read back from [`analysis/outputs/summary.json`](analysis/outputs/summary.json), so they cannot drift apart.

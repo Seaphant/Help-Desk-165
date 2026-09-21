@@ -8,6 +8,7 @@ Re-verify the countable limits at any time:
 
 ```bash
 python -m tools.report_stats     # word count, slide count, workbook sheets
+python -m tools.check_doc_links  # no document points at a file that is missing
 python -m pytest -q              # 125 tests
 python -m analysis.run_all       # regenerates every number the documents quote
 ```
