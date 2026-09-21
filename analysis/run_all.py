@@ -2,9 +2,9 @@
 
     python -m analysis.run_all
 
-Writes one CSV per analysis part, three PNG charts, and summary.json, which the
-deliverable generator in tools/build_deliverables.py reads so the Word and
-PowerPoint files carry exactly the numbers the code produced.
+Writes one CSV per analysis part, four PNG charts, and summary.json, which the
+deliverable builders in tools/ read so the Word, PowerPoint, and Excel files
+carry exactly the numbers the code produced.
 """
 
 from __future__ import annotations
@@ -130,6 +130,7 @@ def main() -> dict[str, Any]:
 
     simulation = monte_carlo.simulate()
     written.extend(monte_carlo.write_charts(simulation))
+    written.append(monte_carlo.write_presentation_chart(simulation))
 
     summary_path = OUTPUT_DIR / "summary.json"
     summary_path.write_text(json.dumps(summary, indent=2), encoding="utf-8")
