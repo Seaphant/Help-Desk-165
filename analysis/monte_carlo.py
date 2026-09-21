@@ -403,6 +403,69 @@ def write_charts(result: SimulationResult, output_dir: Path = OUTPUT_DIR) -> lis
     return written
 
 
+def write_presentation_chart(
+    result: SimulationResult, output_dir: Path = OUTPUT_DIR
+) -> Path:
+    """A taller, larger-type build-cost chart sized for a projected slide.
+
+    The report figure is designed to be read on paper at full page width. Shrunk
+    into a slide column it becomes illegible, so the slide gets its own render
+    with fewer annotations and much bigger type.
+    """
+    import matplotlib
+
+    matplotlib.use("Agg")
+    import matplotlib.pyplot as plt
+
+    output_dir.mkdir(parents=True, exist_ok=True)
+
+    figure, axis = plt.subplots(figsize=(7.4, 6.8))
+    axis.hist(result.cost, bins=45, color="#5a8fc4", edgecolor="white", linewidth=0.5)
+    axis.axvline(
+        result.deterministic_cost,
+        color="#2f6b46",
+        linestyle="--",
+        linewidth=3,
+        label=f"We estimated  ${result.deterministic_cost:,.0f}",
+    )
+    axis.axvline(
+        result.mean_cost,
+        color="#c4504b",
+        linestyle="-",
+        linewidth=3,
+        label=f"Trials expect  ${result.mean_cost:,.0f}",
+    )
+    axis.axvline(
+        A.COST_OVERRUN_THRESHOLD,
+        color="#111111",
+        linestyle=":",
+        linewidth=3,
+        label=f"Approved  ${A.COST_OVERRUN_THRESHOLD:,.0f}",
+    )
+    axis.set_title(
+        f"{result.probability_over_budget:.0%} chance we exceed\n"
+        "the approved budget",
+        fontsize=21,
+        fontweight="bold",
+        color="#1a1a1a",
+        pad=14,
+    )
+    axis.set_xlabel("Total build cost (USD)", fontsize=15)
+    axis.set_ylabel("Trials", fontsize=15)
+    axis.tick_params(labelsize=13)
+    axis.xaxis.set_major_formatter(
+        matplotlib.ticker.FuncFormatter(lambda value, _: f"${value/1000:,.0f}K")
+    )
+    axis.legend(fontsize=14, loc="upper right", framealpha=0.95)
+    axis.spines[["top", "right"]].set_visible(False)
+    figure.tight_layout()
+
+    path = output_dir / "monte_carlo_cost_presentation.png"
+    figure.savefig(path, dpi=170)
+    plt.close(figure)
+    return path
+
+
 def main() -> SimulationResult:
     result = simulate()
     data = summary(result)
@@ -432,6 +495,7 @@ def main() -> SimulationResult:
         print(f"  {row['Variable']:<24}{row['Correlation with NPV']:>8.3f}")
 
     charts = write_charts(result)
+    charts.append(write_presentation_chart(result))
     print("\nCharts written:")
     for path in charts:
         print(f"  {path}")
