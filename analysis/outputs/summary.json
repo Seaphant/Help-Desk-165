@@ -75,8 +75,8 @@
   },
   "part_d_npv": {
     "initial_cost": 157760.0,
-    "total_present_value": 337429.69,
-    "npv": 179669.69,
+    "total_present_value": 337429.77,
+    "npv": 179669.77,
     "roi": 1.1389,
     "irr": 0.44911,
     "simple_payback_year": 3,
@@ -104,7 +104,7 @@
         "Run cost": -26000.0,
         "Net cash flow": 51000.0,
         "Discount factor": 0.92593,
-        "Present value": 47222.22
+        "Present value": 47222.43
       },
       {
         "Year": 2,
@@ -116,7 +116,7 @@
         "Run cost": -26000.0,
         "Net cash flow": 105760.0,
         "Discount factor": 0.85734,
-        "Present value": 90672.15
+        "Present value": 90672.28
       },
       {
         "Year": 3,
@@ -128,7 +128,7 @@
         "Run cost": -26000.0,
         "Net cash flow": 127120.0,
         "Discount factor": 0.79383,
-        "Present value": 100911.95
+        "Present value": 100911.67
       },
       {
         "Year": 4,
@@ -140,7 +140,7 @@
         "Run cost": -26000.0,
         "Net cash flow": 134176.0,
         "Discount factor": 0.73503,
-        "Present value": 98623.37
+        "Present value": 98623.39
       },
       {
         "Year": "NPV",
@@ -152,7 +152,7 @@
         "Run cost": "",
         "Net cash flow": "",
         "Discount factor": "",
-        "Present value": 179669.69
+        "Present value": 179669.77
       }
     ]
   },
@@ -381,7 +381,7 @@
     "optimism_gap": 25654.2,
     "budget_threshold": 185000.0,
     "probability_over_budget": 0.4408,
-    "deterministic_npv": 179669.69,
+    "deterministic_npv": 179669.77,
     "mean_npv": 54286.13,
     "median_npv": 54331.58,
     "npv_p5": -81196.11,

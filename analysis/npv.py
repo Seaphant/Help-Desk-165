@@ -94,7 +94,9 @@ def compute_npv(
         )
         gross = (labor + tool_savings) * adoption
         net = gross - run_cost
-        factor = 1.0 / ((1 + discount_rate) ** year)
+        # Rounded to five places before use, so a reader can multiply the
+        # published table columns and reproduce the present value exactly.
+        factor = round(1.0 / ((1 + discount_rate) ** year), 5)
         rows.append(
             YearRow(
                 year=year,
@@ -105,7 +107,7 @@ def compute_npv(
                 gross_benefit=round(gross, 2),
                 run_cost=run_cost,
                 net_cash_flow=round(net, 2),
-                discount_factor=round(factor, 5),
+                discount_factor=factor,
                 present_value=round(net * factor, 2),
             )
         )
