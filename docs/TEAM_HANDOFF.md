@@ -125,11 +125,10 @@ Open the URL Streamlit prints. Stop the server with `Ctrl+C`.
 
 ### 2c. Caveats, all of them real
 
-- **The app serves on port 43117, not 8501.** `.streamlit/config.toml` is
-  committed and pins `port = 43117`, so the verbatim command prints
-  `Local URL: http://localhost:43117`. The README and `LOOM_SCRIPT.md` both still
-  say 8501 — they are describing the Streamlit default, which the committed
-  config overrides. Trust whatever the terminal prints.
+- **The app serves on port 43117, not the Streamlit default.**
+  `.streamlit/config.toml` is committed and pins `port = 43117`, so the verbatim
+  command prints `Local URL: http://localhost:43117`. Trust whatever the
+  terminal prints.
 - **The browser will not open by itself.** That same config sets
   `headless = true`, so Streamlit prints the URL and waits. Click or paste it.
 - **Port already in use.** If something else holds 43117, Streamlit refuses to

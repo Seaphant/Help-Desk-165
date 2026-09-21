@@ -105,11 +105,11 @@ streamlit run app/Home.py
 
 **No database setup at all.** The first page load creates `data/helpdesk.db` by itself and seeds it — you get a banner saying "First run detected, so the database was seeded with 62 sample tickets" and the dashboard fills in with 21 open, 3 unassigned, 19 SLA breaches, 78.0% compliance. `python -m pytest -q` gives 125 passed in 2.35s.
 
---- MESSAGE 5 of 9 (1247 characters) ---
+--- MESSAGE 5 of 9 (1195 characters) ---
 
 **Running it — the caveats, all of these actually happened to me**
 
-- **It serves on port 43117, not 8501.** `.streamlit/config.toml` is committed and pins that port, so the default is overridden. The README and the Loom script both still say 8501 — ignore them and trust whatever the terminal prints.
+- **It serves on port 43117, not the Streamlit default.** `.streamlit/config.toml` is committed and pins that port, so the default is overridden. Trust whatever the terminal prints.
 - **The browser won't open by itself.** That same config has headless mode on, so Streamlit just prints the URL and waits. Click or paste it.
 - **If the port is busy** Streamlit doesn't fall back, it prints `Port 43117 is not available` and quits. Fix: `streamlit run app/Home.py --server.port 8599`, or any free port.
 - **The first install takes a few minutes** on a normal home connection. It's 51 packages and about 560MB of virtualenv, mostly pyarrow, numpy, pandas and matplotlib. It is not frozen, let it finish.
