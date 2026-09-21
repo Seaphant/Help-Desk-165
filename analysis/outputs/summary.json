@@ -1,0 +1,505 @@
+{
+  "meta": {
+    "organization": "SJSU Campus Technology Services (CTS)",
+    "product": "HelpDesk165",
+    "discount_rate": 0.08,
+    "analysis_years": 4,
+    "annual_ticket_volume": 24000,
+    "approved_capital_budget": 185000.0
+  },
+  "part_c_weighted_scoring": {
+    "project_a": "Project A \u2014 HelpDesk165 ticketing and SLA reporting",
+    "project_b": "Project B \u2014 Campus room and equipment booking portal",
+    "total_a": 8.4,
+    "total_b": 5.95,
+    "winner": "Project A \u2014 HelpDesk165 ticketing and SLA reporting",
+    "margin": 2.45,
+    "table": [
+      {
+        "Criterion": "Strategic alignment",
+        "Weight": "25%",
+        "Project A score": 9,
+        "Project A weighted": 2.25,
+        "Project B score": 6,
+        "Project B weighted": 1.5
+      },
+      {
+        "Criterion": "Expected financial return",
+        "Weight": "20%",
+        "Project A score": 8,
+        "Project A weighted": 1.6,
+        "Project B score": 7,
+        "Project B weighted": 1.4
+      },
+      {
+        "Criterion": "Time to first value",
+        "Weight": "15%",
+        "Project A score": 9,
+        "Project A weighted": 1.35,
+        "Project B score": 5,
+        "Project B weighted": 0.75
+      },
+      {
+        "Criterion": "Delivery and technical risk",
+        "Weight": "15%",
+        "Project A score": 7,
+        "Project A weighted": 1.05,
+        "Project B score": 6,
+        "Project B weighted": 0.9
+      },
+      {
+        "Criterion": "Stakeholder demand and sponsorship",
+        "Weight": "15%",
+        "Project A score": 9,
+        "Project A weighted": 1.35,
+        "Project B score": 6,
+        "Project B weighted": 0.9
+      },
+      {
+        "Criterion": "Staffing feasibility",
+        "Weight": "10%",
+        "Project A score": 8,
+        "Project A weighted": 0.8,
+        "Project B score": 5,
+        "Project B weighted": 0.5
+      },
+      {
+        "Criterion": "TOTAL",
+        "Weight": "100%",
+        "Project A score": "",
+        "Project A weighted": 8.4,
+        "Project B score": "",
+        "Project B weighted": 5.95
+      }
+    ]
+  },
+  "part_d_npv": {
+    "initial_cost": 157760.0,
+    "total_present_value": 337429.69,
+    "npv": 179669.69,
+    "roi": 1.1389,
+    "irr": 0.44911,
+    "simple_payback_year": 3,
+    "discounted_payback_year": 3,
+    "table": [
+      {
+        "Year": 0,
+        "Ticket volume": "",
+        "Adoption": "",
+        "Labor savings": "",
+        "Tool savings": "",
+        "Gross benefit": "",
+        "Run cost": "",
+        "Net cash flow": -157760.0,
+        "Discount factor": 1.0,
+        "Present value": -157760.0
+      },
+      {
+        "Year": 1,
+        "Ticket volume": 24000,
+        "Adoption": "55%",
+        "Labor savings": 70400.0,
+        "Tool savings": 6600.0,
+        "Gross benefit": 77000.0,
+        "Run cost": -26000.0,
+        "Net cash flow": 51000.0,
+        "Discount factor": 0.92593,
+        "Present value": 47222.22
+      },
+      {
+        "Year": 2,
+        "Ticket volume": 25200,
+        "Adoption": "90%",
+        "Labor savings": 120960.0,
+        "Tool savings": 10800.0,
+        "Gross benefit": 131760.0,
+        "Run cost": -26000.0,
+        "Net cash flow": 105760.0,
+        "Discount factor": 0.85734,
+        "Present value": 90672.15
+      },
+      {
+        "Year": 3,
+        "Ticket volume": 26460,
+        "Adoption": "100%",
+        "Labor savings": 141120.0,
+        "Tool savings": 12000.0,
+        "Gross benefit": 153120.0,
+        "Run cost": -26000.0,
+        "Net cash flow": 127120.0,
+        "Discount factor": 0.79383,
+        "Present value": 100911.95
+      },
+      {
+        "Year": 4,
+        "Ticket volume": 27783,
+        "Adoption": "100%",
+        "Labor savings": 148176.0,
+        "Tool savings": 12000.0,
+        "Gross benefit": 160176.0,
+        "Run cost": -26000.0,
+        "Net cash flow": 134176.0,
+        "Discount factor": 0.73503,
+        "Present value": 98623.37
+      },
+      {
+        "Year": "NPV",
+        "Ticket volume": "",
+        "Adoption": "",
+        "Labor savings": "",
+        "Tool savings": "",
+        "Gross benefit": "",
+        "Run cost": "",
+        "Net cash flow": "",
+        "Discount factor": "",
+        "Present value": 179669.69
+      }
+    ]
+  },
+  "part_h_risks": {
+    "total_exposure": 108800.0,
+    "top_risk_ids": [
+      "R3",
+      "R2",
+      "R5"
+    ],
+    "table": [
+      {
+        "ID": "R3",
+        "Category": "Organizational / Adoption",
+        "Risk": "Departments keep using the shared inbox and spreadsheets, so the labor savings that justify the whole business case never materialize.",
+        "P (1-5)": 3,
+        "I (1-5)": 5,
+        "P x I": 15,
+        "Band": "Critical",
+        "Probability": "30%",
+        "Dollar impact": 95000,
+        "Exposure (P x $)": 28500.0,
+        "Early warning trigger": "Fewer than 60 percent of a pilot department's requests arrive through the tool after four weeks."
+      },
+      {
+        "ID": "R2",
+        "Category": "Schedule / Cost",
+        "Risk": "Engineering effort is underestimated, pushing the build past the spring registration change freeze and over the approved capital budget.",
+        "P (1-5)": 5,
+        "I (1-5)": 4,
+        "P x I": 20,
+        "Band": "Critical",
+        "Probability": "45%",
+        "Dollar impact": 42000,
+        "Exposure (P x $)": 18900.0,
+        "Early warning trigger": "Two consecutive sprints close below 70 percent of committed points."
+      },
+      {
+        "ID": "R5",
+        "Category": "Security / Compliance",
+        "Risk": "Ticket descriptions contain FERPA-protected student information while the prototype has no access control, creating a disclosure exposure and a failed pre-launch security review.",
+        "P (1-5)": 3,
+        "I (1-5)": 5,
+        "P x I": 15,
+        "Band": "Critical",
+        "Probability": "25%",
+        "Dollar impact": 60000,
+        "Exposure (P x $)": 15000.0,
+        "Early warning trigger": "Any ticket body containing a student ID is readable by an account without a demonstrated need to know."
+      },
+      {
+        "ID": "R7",
+        "Category": "Scope",
+        "Risk": "Stakeholders demand a knowledge base, live chat, and a native mobile app before they will approve launch.",
+        "P (1-5)": 4,
+        "I (1-5)": 3,
+        "P x I": 12,
+        "Band": "High",
+        "Probability": "45%",
+        "Dollar impact": 30000,
+        "Exposure (P x $)": 13500.0,
+        "Early warning trigger": "More than three new must-have features are added in a single steering committee meeting."
+      },
+      {
+        "ID": "R1",
+        "Category": "Technical",
+        "Risk": "Okta/Duo single sign-on and the Banner roster sync take substantially longer than estimated because campus identity APIs are undocumented.",
+        "P (1-5)": 4,
+        "I (1-5)": 4,
+        "P x I": 16,
+        "Band": "Critical",
+        "Probability": "35%",
+        "Dollar impact": 34000,
+        "Exposure (P x $)": 11900.0,
+        "Early warning trigger": "Integration spike runs past its two-week timebox without a working token exchange."
+      },
+      {
+        "ID": "R4",
+        "Category": "People / Key person",
+        "Risk": "Only one engineer understands the SLA and reporting logic, so any absence stops that work entirely.",
+        "P (1-5)": 3,
+        "I (1-5)": 4,
+        "P x I": 12,
+        "Band": "High",
+        "Probability": "30%",
+        "Dollar impact": 22000,
+        "Exposure (P x $)": 6600.0,
+        "Early warning trigger": "More than 60 percent of commits to the SLA and reporting modules come from a single author."
+      },
+      {
+        "ID": "R8",
+        "Category": "Quality",
+        "Risk": "SLA and breach calculations go untested, management catches an incorrect number in a service review, and trust in the reporting is lost.",
+        "P (1-5)": 3,
+        "I (1-5)": 4,
+        "P x I": 12,
+        "Band": "High",
+        "Probability": "30%",
+        "Dollar impact": 20000,
+        "Exposure (P x $)": 6000.0,
+        "Early warning trigger": "A stakeholder disputes a dashboard figure that the team cannot trace back to individual tickets."
+      },
+      {
+        "ID": "R9",
+        "Category": "Operational / Architecture",
+        "Risk": "The prototype's single-file SQLite database does not survive concurrent campus-wide use and has to be migrated mid-project.",
+        "P (1-5)": 3,
+        "I (1-5)": 3,
+        "P x I": 9,
+        "Band": "Moderate",
+        "Probability": "30%",
+        "Dollar impact": 16000,
+        "Exposure (P x $)": 4800.0,
+        "Early warning trigger": "Database lock errors appear in logs once more than about 20 agents work the queue at once."
+      },
+      {
+        "ID": "R6",
+        "Category": "External / Vendor",
+        "Risk": "Canvas and Banner API changes during the summer upgrade window break the roster and course sync.",
+        "P (1-5)": 2,
+        "I (1-5)": 4,
+        "P x I": 8,
+        "Band": "Moderate",
+        "Probability": "20%",
+        "Dollar impact": 18000,
+        "Exposure (P x $)": 3600.0,
+        "Early warning trigger": "Vendor release notes announce a breaking change to an endpoint the integration depends on."
+      }
+    ]
+  },
+  "part_i_decision_tree": {
+    "question": "How should CTS fund the production version of HelpDesk165: build it outright now, license a commercial IT service-management product, or fund a small paid pilot first and decide afterwards?",
+    "recommended": "Fund an eight-week paid pilot, then decide",
+    "recommended_emv": 98300.0,
+    "runner_up": "Build the full product now",
+    "runner_up_emv": 85000.0,
+    "margin": 13300.0,
+    "worst_case_recommended": -46000.0,
+    "worst_case_runner_up": -95000,
+    "table": [
+      {
+        "Decision": "Build the full product now",
+        "Outcome": "Campus-wide adoption takes hold",
+        "Probability": "60%",
+        "Net value (4 yr)": 205000,
+        "P x value": 123000.0,
+        "Branch EMV": ""
+      },
+      {
+        "Decision": "Build the full product now",
+        "Outcome": "Adoption stalls at a few departments",
+        "Probability": "40%",
+        "Net value (4 yr)": -95000,
+        "P x value": -38000.0,
+        "Branch EMV": ""
+      },
+      {
+        "Decision": "Build the full product now",
+        "Outcome": "EMV of branch",
+        "Probability": "",
+        "Net value (4 yr)": "",
+        "P x value": "",
+        "Branch EMV": 85000.0
+      },
+      {
+        "Decision": "License a commercial ITSM product",
+        "Outcome": "Product fits campus processes as sold",
+        "Probability": "55%",
+        "Net value (4 yr)": 120000,
+        "P x value": 66000.0,
+        "Branch EMV": ""
+      },
+      {
+        "Decision": "License a commercial ITSM product",
+        "Outcome": "Heavy customization is required",
+        "Probability": "45%",
+        "Net value (4 yr)": 15000,
+        "P x value": 6750.0,
+        "Branch EMV": ""
+      },
+      {
+        "Decision": "License a commercial ITSM product",
+        "Outcome": "EMV of branch",
+        "Probability": "",
+        "Net value (4 yr)": "",
+        "P x value": "",
+        "Branch EMV": 72750.0
+      },
+      {
+        "Decision": "Fund an eight-week paid pilot, then decide",
+        "Outcome": "Pilot validates demand, then build",
+        "Probability": "65%",
+        "Net value (4 yr)": 176000,
+        "P x value": 114400.0,
+        "Branch EMV": ""
+      },
+      {
+        "Decision": "Fund an eight-week paid pilot, then decide",
+        "Outcome": "Pilot does not validate demand, stop",
+        "Probability": "35%",
+        "Net value (4 yr)": -46000.0,
+        "P x value": -16100.0,
+        "Branch EMV": ""
+      },
+      {
+        "Decision": "Fund an eight-week paid pilot, then decide",
+        "Outcome": "EMV of branch",
+        "Probability": "",
+        "Net value (4 yr)": "",
+        "P x value": "",
+        "Branch EMV": 98300.0
+      }
+    ],
+    "mermaid": "flowchart LR\n    Decision{\"Fund HelpDesk165 how?\"}\n    Decision -->|\"Build the full product now\"| C1[\"EMV $85,000\"]\n    C1 -->|\"60% Campus-wide adoption takes hold\"| L11[\"$205,000\"]\n    C1 -->|\"40% Adoption stalls at a few departments\"| L12[\"-$95,000\"]\n    Decision -->|\"License a commercial ITSM product\"| C2[\"EMV $72,750\"]\n    C2 -->|\"55% Product fits campus processes as sold\"| L21[\"$120,000\"]\n    C2 -->|\"45% Heavy customization is required\"| L22[\"$15,000\"]\n    Decision -->|\"Fund an eight-week paid pilot, then decide\"| C3[\"EMV $98,300\"]\n    C3 -->|\"65% Pilot validates demand, then build\"| L31[\"$176,000\"]\n    C3 -->|\"35% Pilot does not validate demand, stop\"| L32[\"-$46,000\"]"
+  },
+  "part_j_monte_carlo": {
+    "trials": 10000,
+    "seed": 165,
+    "deterministic_cost": 157760.0,
+    "mean_cost": 183414.2,
+    "median_cost": 180823.1,
+    "cost_p10": 148459.41,
+    "cost_p80": 208010.76,
+    "cost_p90": 222741.62,
+    "cost_p95": 234739.88,
+    "optimism_gap": 25654.2,
+    "budget_threshold": 185000.0,
+    "probability_over_budget": 0.4408,
+    "deterministic_npv": 179669.69,
+    "mean_npv": 54286.13,
+    "median_npv": 54331.58,
+    "npv_p5": -81196.11,
+    "npv_p10": -56353.91,
+    "npv_p90": 164775.29,
+    "npv_p95": 191975.8,
+    "probability_negative_npv": 0.273,
+    "percentiles": [
+      {
+        "Percentile": "P5",
+        "Total build cost": 140992.5,
+        "Four-year NPV": -81196.11
+      },
+      {
+        "Percentile": "P10",
+        "Total build cost": 148459.41,
+        "Four-year NPV": -56353.91
+      },
+      {
+        "Percentile": "P25",
+        "Total build cost": 161826.37,
+        "Four-year NPV": -6261.99
+      },
+      {
+        "Percentile": "P50",
+        "Total build cost": 180823.1,
+        "Four-year NPV": 54331.58
+      },
+      {
+        "Percentile": "P75",
+        "Total build cost": 202360.96,
+        "Four-year NPV": 113532.3
+      },
+      {
+        "Percentile": "P80",
+        "Total build cost": 208010.76,
+        "Four-year NPV": 127847.35
+      },
+      {
+        "Percentile": "P90",
+        "Total build cost": 222741.62,
+        "Four-year NPV": 164775.29
+      },
+      {
+        "Percentile": "P95",
+        "Total build cost": 234739.88,
+        "Four-year NPV": 191975.8
+      }
+    ],
+    "inputs": [
+      {
+        "Variable": "Engineering effort (person-weeks)",
+        "Distribution": "Triangular",
+        "Parameters": "min 30, likely 38, max 62",
+        "Sampled mean": 43.35
+      },
+      {
+        "Variable": "Blended loaded build rate ($/hr)",
+        "Distribution": "Normal, clipped",
+        "Parameters": "mean 88, sd 7, clipped to [70, 118]",
+        "Sampled mean": 88.08
+      },
+      {
+        "Variable": "SSO / Banner rework cost ($)",
+        "Distribution": "Bernoulli x Triangular",
+        "Parameters": "p 35%, then triangular 8,000 / 15,000 / 34,000",
+        "Sampled mean": 6683.34
+      },
+      {
+        "Variable": "Minutes saved per ticket",
+        "Distribution": "Triangular",
+        "Parameters": "min 4, likely 10, max 14",
+        "Sampled mean": 9.31
+      },
+      {
+        "Variable": "Steady-state adoption share",
+        "Distribution": "Triangular",
+        "Parameters": "min 55%, likely 92%, max 100%",
+        "Sampled mean": 0.8242
+      },
+      {
+        "Variable": "Annual run cost ($)",
+        "Distribution": "Uniform",
+        "Parameters": "20,000 to 34,000",
+        "Sampled mean": 26989.72
+      }
+    ],
+    "sensitivity": [
+      {
+        "Variable": "minutes_saved",
+        "Correlation with NPV": 0.7928,
+        "Share of NPV variance explained": 0.6286
+      },
+      {
+        "Variable": "steady_adoption",
+        "Correlation with NPV": 0.4776,
+        "Share of NPV variance explained": 0.2281
+      },
+      {
+        "Variable": "effort_person_weeks",
+        "Correlation with NPV": -0.2781,
+        "Share of NPV variance explained": 0.0773
+      },
+      {
+        "Variable": "annual_run_cost",
+        "Correlation with NPV": -0.1758,
+        "Share of NPV variance explained": 0.0309
+      },
+      {
+        "Variable": "build_rate",
+        "Correlation with NPV": -0.1524,
+        "Share of NPV variance explained": 0.0232
+      },
+      {
+        "Variable": "sso_rework_cost",
+        "Correlation with NPV": -0.1334,
+        "Share of NPV variance explained": 0.0178
+      }
+    ]
+  }
+}

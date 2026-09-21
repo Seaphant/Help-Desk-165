@@ -1,0 +1,7 @@
+Variable,Distribution,Parameters,Sampled mean
+Engineering effort (person-weeks),Triangular,"min 30, likely 38, max 62",43.35
+Blended loaded build rate ($/hr),"Normal, clipped","mean 88, sd 7, clipped to [70, 118]",88.08
+SSO / Banner rework cost ($),Bernoulli x Triangular,"p 35%, then triangular 8,000 / 15,000 / 34,000",6683.34
+Minutes saved per ticket,Triangular,"min 4, likely 10, max 14",9.31
+Steady-state adoption share,Triangular,"min 55%, likely 92%, max 100%",0.8242
+Annual run cost ($),Uniform,"20,000 to 34,000",26989.72

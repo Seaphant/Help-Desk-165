@@ -1,0 +1,8 @@
+Criterion,Weight,Project A score,Project A weighted,Project B score,Project B weighted
+Strategic alignment,25%,9,2.25,6,1.5
+Expected financial return,20%,8,1.6,7,1.4
+Time to first value,15%,9,1.35,5,0.75
+Delivery and technical risk,15%,7,1.05,6,0.9
+Stakeholder demand and sponsorship,15%,9,1.35,6,0.9
+Staffing feasibility,10%,8,0.8,5,0.5
+TOTAL,100%,,8.4,,5.95

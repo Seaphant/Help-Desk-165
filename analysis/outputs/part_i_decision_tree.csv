@@ -1,0 +1,10 @@
+Decision,Outcome,Probability,Net value (4 yr),P x value,Branch EMV
+Build the full product now,Campus-wide adoption takes hold,60%,205000,123000.0,
+Build the full product now,Adoption stalls at a few departments,40%,-95000,-38000.0,
+Build the full product now,EMV of branch,,,,85000.0
+License a commercial ITSM product,Product fits campus processes as sold,55%,120000,66000.0,
+License a commercial ITSM product,Heavy customization is required,45%,15000,6750.0,
+License a commercial ITSM product,EMV of branch,,,,72750.0
+"Fund an eight-week paid pilot, then decide","Pilot validates demand, then build",65%,176000,114400.0,
+"Fund an eight-week paid pilot, then decide","Pilot does not validate demand, stop",35%,-46000.0,-16100.0,
+"Fund an eight-week paid pilot, then decide",EMV of branch,,,,98300.0
