@@ -13,7 +13,10 @@ Aim to land at **3:50** so you have margin.
    streamlit run app/Home.py
    ```
 
-   Open the URL Streamlit prints (normally <http://localhost:8501>).
+   Open <http://localhost:43117>. The committed config runs headless, so no
+   browser opens by itself — the terminal prints the URL. If the port is
+   already taken Streamlit exits with `Port 43117 is not available`, so rerun
+   it as `streamlit run app/Home.py --server.port 8599`.
 
 2. **Reseed the sample data.** In the sidebar, expand **Reset sample data** and
    click **Reseed database**. This is the single most important setup step — it

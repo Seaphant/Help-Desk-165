@@ -59,7 +59,7 @@ No database server, no cloud account, and no API keys are needed. The app uses a
 streamlit run app/Home.py
 ```
 
-Then open the URL Streamlit prints (by default <http://localhost:8501>).
+Then open <http://localhost:43117>. The committed `.streamlit/config.toml` pins that port and runs headless, so no browser opens by itself — the terminal prints the URL. If something else already holds the port, Streamlit exits with `Port 43117 is not available` instead of picking another one, so rerun it as `streamlit run app/Home.py --server.port 8599`.
 
 On first launch the app creates `data/helpdesk.db` and seeds **62 sample tickets** plus six agents. Use the sidebar to switch among Requester, Agent, and Manager views. There is no real login; the role selector is enough to show that those people see different capabilities.
 
