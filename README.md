@@ -11,7 +11,7 @@ One queue for every campus technology request. Built for **SJSU Campus Technolog
 - **William Nguyen** — GitHub: [Seaphant](https://github.com/Seaphant)
 - **Amy Wong**
 - **Bryce Brewster**
-- `TEAMMATE 4 — ADD FULL NAME HERE` *(placeholder — delete this line if the team is smaller)*
+- **Joshua Bemowski** - GitHub: [JoshuaBemowski](https://github.com/JoshuaBemowski)
 
 > The assignment expects every team member's name on the README. Delete the placeholder
 > lines that do not apply and fill in the rest.
